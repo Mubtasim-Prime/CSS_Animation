@@ -8,7 +8,7 @@
     transform-origin: center center;
 }
 
-@for $num from 1 through 8 {
+@for $num from 1 through 10 {
     .circle:nth-child(#{$num}) {
         left: ($num - 1) * 40px;
         animation-delay: $num * 0.1s;
@@ -17,13 +17,19 @@
 
 @keyframes move-circle {
     0%{
-        transform: translate(0,0);
+        transform: translate(0,0) scale(1);
+        background-color: turquoise;
+        opacity:1;
+
     }
     50%{
-        transform: translate(0,100px);
+        transform: translate(0,100px) scale(.4);
+        opacity: 1;
+        background-color: blue;
     }
     100%{
-        transform: translate(0,0);
-    }
-    
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+        background-color: turquoise;
+    }    
 }
