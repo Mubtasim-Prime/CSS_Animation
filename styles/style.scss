@@ -4,10 +4,26 @@
     height: 30px;
     border-radius: 100%;
     background-color: turquoise;
+    animation: move-circle 1s infinite;
+    transform-origin: center center;
 }
 
 @for $num from 1 through 8 {
     .circle:nth-child(#{$num}) {
         left: ($num - 1) * 40px;
+        animation-delay: $num * 0.1s;
     }
+}
+
+@keyframes move-circle {
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,100px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+    
 }
