@@ -1,0 +1,30 @@
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: turquoise; }
+
+.circle:nth-child(1) {
+  left: 0px; }
+
+.circle:nth-child(2) {
+  left: 40px; }
+
+.circle:nth-child(3) {
+  left: 80px; }
+
+.circle:nth-child(4) {
+  left: 120px; }
+
+.circle:nth-child(5) {
+  left: 160px; }
+
+.circle:nth-child(6) {
+  left: 200px; }
+
+.circle:nth-child(7) {
+  left: 240px; }
+
+.circle:nth-child(8) {
+  left: 280px; }
